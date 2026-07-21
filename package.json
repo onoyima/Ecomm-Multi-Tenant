@@ -1,0 +1,22 @@
+{
+  "name": "workspace",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "artifacts/*",
+    "lib/*",
+    "lib/integrations/*",
+    "scripts"
+  ],
+  "scripts": {
+    "build": "npm run typecheck && npm run build -ws",
+    "typecheck:libs": "tsc --build",
+    "typecheck": "npm run typecheck:libs && npm run typecheck -w artifacts/mobile -w artifacts/mockup-sandbox -w scripts"
+  },
+  "devDependencies": {
+    "@types/react-native": "^0.72.8",
+    "prettier": "^3.8.1",
+    "typescript": "~5.9.2"
+  }
+}
