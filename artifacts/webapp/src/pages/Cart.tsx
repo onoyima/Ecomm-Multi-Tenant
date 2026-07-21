@@ -78,7 +78,7 @@ export function Cart({ onNavigate }: { onNavigate: (path: string) => void }) {
               <motion.div key={item.id} variants={fadeUp}>
                 <Card className="border-border/50">
                   <CardContent className="flex gap-4 p-4">
-                    <div className="w-24 h-24 rounded-xl overflow-hidden bg-muted flex-shrink-0">
+                    <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-xl overflow-hidden bg-muted flex-shrink-0">
                       <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
                     </div>
                     <div className="flex-1 min-w-0">

@@ -82,7 +82,7 @@ export function Payouts({ onNavigate }: { onNavigate: (path: string) => void }) 
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         {[
           { label: "Pending Payouts", value: formatPrice(totalPending), color: "text-yellow-500" },
           { label: "Processing", value: formatPrice(totalProcessing), color: "text-primary" },

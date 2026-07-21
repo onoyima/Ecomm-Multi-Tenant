@@ -249,7 +249,7 @@ export function ProductDetail({ id, onNavigate }: { id: string; onNavigate: (pat
 
           {/* Trust badges */}
           <motion.div
-            className="grid grid-cols-3 gap-4 p-4 bg-muted/50 rounded-xl"
+            className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 p-4 bg-muted/50 rounded-xl"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}

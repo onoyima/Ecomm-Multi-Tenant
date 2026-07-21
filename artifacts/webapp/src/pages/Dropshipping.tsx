@@ -83,7 +83,7 @@ export function Dropshipping({ onNavigate }: { onNavigate: (path: string) => voi
             <p className="text-white/70 text-sm">Import & sell without holding inventory</p>
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {[
             { label: "Imported", value: "12" },
             { label: "Active", value: "9" },

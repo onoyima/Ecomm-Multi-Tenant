@@ -64,7 +64,7 @@ export function Escrow({ onNavigate }: { onNavigate: (path: string) => void }) {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {[
           { label: "Total Held", value: formatPrice(totalHeld), color: "text-primary" },
           { label: "Pending Release", value: formatPrice(pendingRelease), color: "text-yellow-500" },

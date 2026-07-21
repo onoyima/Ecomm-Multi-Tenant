@@ -179,7 +179,7 @@ export function Login({ onNavigate, isRegister }: { onNavigate: (path: string) =
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
             >
-              <div className="flex items-center gap-3">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <Button variant="outline" className="flex-1 gap-2" onClick={() => handleSocialLogin("google")} disabled={socialLoading === "google"}>
                   {socialLoading === "google" ? <Loader size={16} className="animate-spin" /> : <Globe size={16} className="text-[#EA4335]" />} Google
                 </Button>

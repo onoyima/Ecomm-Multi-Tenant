@@ -63,7 +63,7 @@ export function Referral({ onNavigate }: { onNavigate: (path: string) => void })
       </motion.div>
 
       {stats && (
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           <Card><CardContent className="p-4 text-center"><p className="text-2xl font-bold text-primary">{stats.totalReferrals}</p><p className="text-xs text-muted-foreground">Referrals</p></CardContent></Card>
           <Card><CardContent className="p-4 text-center"><p className="text-2xl font-bold text-green-600">{formatPrice(stats.totalEarned)}</p><p className="text-xs text-muted-foreground">Earned</p></CardContent></Card>
           <Card><CardContent className="p-4 text-center"><p className="text-2xl font-bold text-purple-600">{stats.totalReferrals - stats.completedCount}</p><p className="text-xs text-muted-foreground">Pending</p></CardContent></Card>

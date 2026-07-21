@@ -164,7 +164,7 @@ export function Addresses({ onNavigate }: { onNavigate: (path: string) => void }
             <Input placeholder="Postal Code" value={form.postalCode} onChange={(e) => setForm({ ...form, postalCode: e.target.value })} />
           </div>
           <Textarea placeholder="Street Address" value={form.street} onChange={(e) => setForm({ ...form, street: e.target.value })} />
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <Input placeholder="City" value={form.city} onChange={(e) => setForm({ ...form, city: e.target.value })} />
             <Input placeholder="State" value={form.state} onChange={(e) => setForm({ ...form, state: e.target.value })} />
             <Input placeholder="Country" value={form.country} onChange={(e) => setForm({ ...form, country: e.target.value })} />

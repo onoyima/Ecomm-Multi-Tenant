@@ -70,7 +70,7 @@ export function FraudDetection({ onNavigate }: { onNavigate: (path: string) => v
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {[
           { label: "Flagged", value: stats.flagged, color: "text-destructive" },
           { label: "Under Review", value: stats.review, color: "text-yellow-500" },

@@ -127,6 +127,7 @@ export function UserManagement({ onNavigate }: { onNavigate: (path: string) => v
               <motion.div variants={stagger} initial="initial" animate="animate">
                 <Card>
                   <CardContent className="p-0">
+                    <div className="overflow-x-auto">
                     <Table>
                       <TableHeader>
                         <TableRow>
@@ -177,6 +178,7 @@ export function UserManagement({ onNavigate }: { onNavigate: (path: string) => v
                         </AnimatePresence>
                       </TableBody>
                     </Table>
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>

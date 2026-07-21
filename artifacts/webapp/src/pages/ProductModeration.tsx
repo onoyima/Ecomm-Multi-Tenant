@@ -120,6 +120,7 @@ export function ProductModeration({ onNavigate }: { onNavigate: (path: string) =
         <motion.div variants={stagger} initial="initial" animate="animate">
           <Card>
             <CardContent className="p-0">
+              <div className="overflow-x-auto">
               <Table>
                 <TableHeader>
                   <TableRow>
@@ -170,6 +171,7 @@ export function ProductModeration({ onNavigate }: { onNavigate: (path: string) =
                   </AnimatePresence>
                 </TableBody>
               </Table>
+              </div>
             </CardContent>
           </Card>
         </motion.div>

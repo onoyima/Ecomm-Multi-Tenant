@@ -340,6 +340,7 @@ export function VendorDashboard({ onNavigate }: { onNavigate: (path: string) => 
                 <h3 className="font-semibold">All Products ({allProducts.length})</h3>
                 <Button size="sm"><Plus size={14} className="mr-1" /> Add Product</Button>
               </div>
+              <div className="overflow-x-auto">
               <Table>
                 <TableHeader>
                   <TableRow>
@@ -378,6 +379,7 @@ export function VendorDashboard({ onNavigate }: { onNavigate: (path: string) => 
                   })}
                 </TableBody>
               </Table>
+              </div>
             </CardContent>
           </Card>
         </TabsContent>

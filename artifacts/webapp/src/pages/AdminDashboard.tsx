@@ -290,6 +290,7 @@ export function AdminDashboard({ onNavigate }: { onNavigate: (path: string) => v
           <Card className="border-border/50">
             <CardContent className="p-6">
               <h3 className="font-semibold mb-4">Vendor Management</h3>
+              <div className="overflow-x-auto">
               <Table>
                 <TableHeader>
                   <TableRow>
@@ -322,6 +323,7 @@ export function AdminDashboard({ onNavigate }: { onNavigate: (path: string) => v
                   ))}
                 </TableBody>
               </Table>
+              </div>
             </CardContent>
           </Card>
         </TabsContent>
@@ -330,6 +332,7 @@ export function AdminDashboard({ onNavigate }: { onNavigate: (path: string) => v
           <Card className="border-border/50">
             <CardContent className="p-6">
               <h3 className="font-semibold mb-4">All Vendors</h3>
+              <div className="overflow-x-auto">
               <Table>
                 <TableHeader>
                   <TableRow>
@@ -367,6 +370,7 @@ export function AdminDashboard({ onNavigate }: { onNavigate: (path: string) => v
                   ))}
                 </TableBody>
               </Table>
+              </div>
             </CardContent>
           </Card>
         </TabsContent>
